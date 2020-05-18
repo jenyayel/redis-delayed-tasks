@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es6",
+      "lib": [ "es6", "dom", "esnext.asynciterable" ],
+      "moduleResolution": "node",
+      "rootDir": "./",
+      "sourceMap": true,
+      "allowJs": false,
+      "noImplicitAny": true,
+      "noUnusedLocals": true,
+      "noImplicitThis": true,
+      "strictNullChecks": true,
+      "noImplicitReturns": true,
+      "preserveConstEnums": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": ".build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+    },
+    "exclude": [ "node_modules", ".build", "export" ],
+    "include": ["src/**/*", "**/*.spec.ts"],
+    "types": [ "typePatches" ]
+  }
