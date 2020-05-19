@@ -5,13 +5,14 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
+      "runtimeExecutable": "npm",
       "runtimeArgs": [
-        "-r",
-        "ts-node/register",
-        "inspect"
+        "run-script",
+        "debug"
       ],
-      "args": [
-        "${workspaceFolder}/src/index.ts"
+      "port": 9229,
+      "skipFiles": [
+        "<node_internals>/**"
       ]
     }
   ]
