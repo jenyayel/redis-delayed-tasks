@@ -4,3 +4,7 @@ export interface Task<T = string> {
     executeOnEpoch: number;
     payload: T;
 }
+
+export interface Executer<T = string> {
+    execute: (task: Task<T>) => Promise<void> | void;
+}
